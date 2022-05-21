@@ -1,0 +1,184 @@
+/* 文章页H1-H6图标样式效果 */
+h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
+    -webkit-animation: ccc 1.6s linear infinite ;
+    animation: ccc 1.6s linear infinite ;
+}
+@-webkit-keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+@keyframes ccc {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(-1turn);
+        transform: rotate(-1turn)
+    }
+}
+
+#content-inner.layout h1::before {
+    color: #ef50a8 ;
+    margin-left: -1.55rem;
+    font-size: 1.3rem;
+    margin-top: -0.23rem;
+}
+#content-inner.layout h2::before {
+    color: #fb7061 ;
+    margin-left: -1.35rem;
+    font-size: 1.1rem;
+    margin-top: -0.12rem;
+}
+#content-inner.layout h3::before {
+    color: #ffbf00 ;
+    margin-left: -1.22rem;
+    font-size: 0.95rem;
+    margin-top: -0.09rem;
+}
+#content-inner.layout h4::before {
+    color: #a9e000 ;
+    margin-left: -1.05rem;
+    font-size: 0.8rem;
+    margin-top: -0.09rem;
+}
+#content-inner.layout h5::before {
+    color: #57c850 ;
+    margin-left: -0.9rem;
+    font-size: 0.7rem;
+    margin-top: 0.0rem;
+}
+#content-inner.layout h6::before {
+    color: #5ec1e0 ;
+    margin-left: -0.9rem;
+    font-size: 0.66rem;
+    margin-top: 0.0rem;
+}
+
+#content-inner.layout h1:hover, #content-inner.layout h2:hover, #content-inner.layout h3:hover, #content-inner.layout h4:hover, #content-inner.layout h5:hover, #content-inner.layout h6:hover {
+    color: #49b1f5 ;
+}
+#content-inner.layout h1:hover::before, #content-inner.layout h2:hover::before, #content-inner.layout h3:hover::before, #content-inner.layout h4:hover::before, #content-inner.layout h5:hover::before, #content-inner.layout h6:hover::before {
+    color: #49b1f5 ;
+    -webkit-animation: ccc 3.2s linear infinite ;
+    animation: ccc 3.2s linear infinite ;
+}
+
+/* 页面设置icon转动速度调整 */
+#rightside_config i.fas.fa-cog.fa-spin {
+    animation: fa-spin 5s linear infinite ;
+}
+
+
+/*哔哩哔哩视频适配*/
+.aspect-ratio {position: relative;width: 100%;height: 0;padding-bottom: 75%;margin: 3% auto;text-align: center;}      
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/*图片下的文字说明*/
+.jg-caption{
+    text-align: center !important;
+}
+
+.jg-caption-visible::before {
+    content: "ꉂ(ˊᗜˋ*)";
+} 
+.fancybox-caption__body::before {
+    content: "ꉂ(ˊᗜˋ*)";
+} 
+.img-alt.is-center::before {
+    content: "ꉂ(ˊᗜˋ*)";
+}
+
+/*主题的图片*/
+@font-face {
+  font-family: "iconfont"; /* Project id 3352050 */
+  /* Color fonts */
+  src: 
+       url('//at.alicdn.com/t/font_3352050_9mkey47daxf.woff2?t=1650785914832') format('woff2'),
+       url('//at.alicdn.com/t/font_3352050_9mkey47daxf.woff?t=1650785914832') format('woff'),
+       url('//at.alicdn.com/t/font_3352050_9mkey47daxf.ttf?t=1650785914832') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xiangsu-kele:before {
+  content: "\e60a";
+}
+
+.icon-shijian:before {
+  content: "\e635";
+}
+
+.icon-shouye-copy:before {
+  content: "\e6ca";
+}
+
+.icon-liuyan:before {
+  content: "\e62c";
+}
+
+.icon-shouye:before {
+  content: "\e628";
+}
+
+.icon-ziliaoku:before {
+  content: "\e600";
+}
+
+.icon-dianying:before {
+  content: "\e605";
+}
+
+.icon-icon:before {
+  content: "\e652";
+}
+
+.icon-biaoqian:before {
+  content: "\e629";
+}
+
+.icon-guanyu:before {
+  content: "\e607";
+}
+
+.icon-youqinglianjie:before {
+  content: "\e663";
+}
+
+.icon-jita:before {
+  content: "\e6c9";
+}
+
+
+
+
+/*鼠标样式*/
+/*指针样式*/
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
+      default;
+}
+/*链接小手样式*/
+a,
+img {
+  cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur),
+      default;
+}
