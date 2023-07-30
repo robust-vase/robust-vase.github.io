@@ -101,73 +101,6 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
     content: "ꉂ(ˊᗜˋ*)";
 }
 
-/* 阿里巴巴图标 */
-/*主题的图片*/
-@font-face {
-  font-family: "iconfont"; /* Project id 3352050 */
-  /* Color fonts */
-  src: 
-       url('//at.alicdn.com/t/c/font_3352050_p36dr5kklgi.woff2?t=1690613843475') format('woff2'),
-       url('//at.alicdn.com/t/c/font_3352050_p36dr5kklgi.woff?t=1690613843475') format('woff'),
-       url('//at.alicdn.com/t/c/font_3352050_p36dr5kklgi.ttf?t=1690613843475') format('truetype');
-}
-
-.iconfont {
-  font-family: "iconfont" !important;
-  font-size: 20px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-shouye:before {
-  content: "\e6c7";
-}
-
-.icon-shejiao:before {
-  content: "\e602";
-}
-
-.icon-liuyanban:before {
-  content: "\e64b";
-}
-
-.icon-mingpian:before {
-  content: "\e623";
-}
-
-.icon-lianjie:before {
-  content: "\e668";
-}
-
-.icon-xiaoxi:before {
-  content: "\e601";
-}
-
-.icon-wenzhang:before {
-  content: "\ecb3";
-}
-
-.icon-biaoqian:before {
-  content: "\e603";
-}
-
-.icon-xiangsu-kele:before {
-  content: "\e60a";
-}
-
-.icon-shijian:before {
-  content: "\e635";
-}
-
-.icon-fenlei:before {
-  content: "\e6ca";
-}
-
-.icon-ziliaoku:before {
-  content: "\e600";
-}
-
 /*鼠标样式*/
 /*指针样式*/
 body {
@@ -196,4 +129,36 @@ img {
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
 .menus_items .menus_item:nth-child(2) .menus_item_child {
   left: -125px;
+}
+
+/* 公告栏欢迎信息 */
+/* 欢迎信息 */
+#welcome-info {
+  background: linear-gradient(45deg, #b9f4f3, #e3fbf9);
+  border-radius: 18px;
+  padding: 8px;
+}
+[data-theme="dark"] #welcome-info {
+  background: #212121;
+}
+
+/* 页脚透明 */
+#footer {
+  background: rgba(0,0,0,.50);
+  color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  backdrop-filter: saturate(100%) blur(5px)
+}
+
+#footer::before {
+  background: rgba(0,0,0,.50);
+}
+
+#footer #footer-wrap {
+  color: white
+}
+
+#footer #footer-wrap a {
+  color: white
 }

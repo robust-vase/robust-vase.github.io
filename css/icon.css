@@ -1,0 +1,71 @@
+/* 阿里巴巴图标 */
+/*主题的图片*/
+@font-face {
+    font-family: "iconfont"; /* Project id 3352050 */
+    /* Color fonts */
+    src: 
+         url('//at.alicdn.com/t/c/font_3352050_148w4q2lbewo.woff2?t=1690624491803') format('woff2'),
+         url('//at.alicdn.com/t/c/font_3352050_148w4q2lbewo.woff?t=1690624491803') format('woff'),
+         url('//at.alicdn.com/t/c/font_3352050_148w4q2lbewo.ttf?t=1690624491803') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-tongji:before {
+    content: "\e609";
+  }
+  
+  .icon-shouye:before {
+    content: "\e6c7";
+  }
+  
+  .icon-shejiao:before {
+    content: "\e602";
+  }
+  
+  .icon-liuyanban:before {
+    content: "\e64b";
+  }
+  
+  .icon-mingpian:before {
+    content: "\e623";
+  }
+  
+  .icon-lianjie:before {
+    content: "\e668";
+  }
+  
+  .icon-xiaoxi:before {
+    content: "\e601";
+  }
+  
+  .icon-wenzhang:before {
+    content: "\ecb3";
+  }
+  
+  .icon-biaoqian:before {
+    content: "\e603";
+  }
+  
+  .icon-xiangsu-kele:before {
+    content: "\e60a";
+  }
+  
+  .icon-shijian:before {
+    content: "\e635";
+  }
+  
+  .icon-fenlei:before {
+    content: "\e6ca";
+  }
+  
+  .icon-ziliaoku:before {
+    content: "\e600";
+  }
+  
