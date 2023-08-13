@@ -24,7 +24,7 @@ function createtime() {
     var restMinutes = minutes;
     if (hours >= 8 && hours < 21) {
         workHours = hours - 8;
-        restHours = 11;
+        restHours = 8;
         restMinutes = 0;
     } else if (hours >= 21 || hours < 8) {
         workMinutes = 0;
