@@ -29,7 +29,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-    let dist = getDistance(116.3737, 39.96724, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+    let dist = getDistance(116.397128, 39.916527, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
     let pos = ipLoacation.result.ad_info.nation;
     let ip;
     let posdesc;
@@ -61,6 +61,9 @@ function showWelcome() {
             break;
         case "加拿大":
             posdesc = "缓缓飘落的的枫叶～像思念～";
+            break;
+        case "巴勒斯坦":
+            posdesc = "老乡加油！！打倒以色列复国主义纳粹！！✊";
             break;
         case "中国":
             pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city + " " + ipLoacation.result.ad_info.district;
