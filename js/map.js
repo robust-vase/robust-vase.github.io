@@ -238,7 +238,7 @@ function showWelcome() {
 
     // 根据月份切换欢迎语
     let monthMessage;
-    if (date.getMonth() === 5) { // June is month 5 (0-based index)
+    if (date.getMonth() === 6) {
         monthMessage = "六月的雨，是最无情的呢你~";
     } else {
         monthMessage = "";
