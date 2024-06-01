@@ -236,6 +236,14 @@ function showWelcome() {
     else if (date.getHours() >= 19 && date.getHours() < 24) timeChange = "<span>晚上好</span>，夜生活嗨起来！";
     else timeChange = "夜深了，早点休息，少熬夜。";
 
+    // 根据月份切换欢迎语
+    let monthMessage;
+    if (date.getMonth() === 5) { // June is month 5 (0-based index)
+        monthMessage = "六月的雨，是最无情的呢你~";
+    } else {
+        monthMessage = "";
+    }
+
     try {
         //自定义文本和需要放的位置
         document.getElementById("welcome-info").innerHTML =
